@@ -1,3 +1,5 @@
+/* Bulk styles, wrapping other elements */
+
 html {
     border-left: 5px;
     border-color: lightgray;
@@ -15,6 +17,16 @@ header, main, footer {
     padding: 1rem 2rem;
 }
 
+article {
+    margin-bottom: 4rem;
+    border: 1px lightgray;
+    border-bottom-style: solid;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+/* Heading/image styles, broad elements */
+
 h1 {
     color: tomato;
 }
@@ -27,45 +39,79 @@ ul {
     list-style-type: none;
 }
 
-article {
-    margin-bottom: 4rem;
-    border: 1px solid lightgray;
-    padding-bottom: 2rem;
-}
-
-article p::first-letter {
-    color: lightgray;
-    font-size: 5rem;
-}
-
-#top-nav-list {
-    justify-content: space-between;
-    color: lightgray;
-}
-
-#top-nav-list a {
-    flex-direction: row;
-}
-
-#bottom-nav-list {
-    justify-content: space-between;
-}
-
-#bottom-nav-list a {
-    color: tomato;
-    flex-direction: row;
-}
-
-.article-title {
-    font-size: 3rem;
-}
-
 h6 {
     text-align: right;
     font: bolder;
     color: tomato;
 }
 
+/* Nav list styles */
+
+#top-nav-list {
+    color: lightgray;
+}
+
+#top-nav-list h2 {
+    color: black;
+}
+
+#top-nav-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+#top-nav-list a {
+    color: lightgray;
+    font-size: 2rem;
+}
+
+#bottom-nav-list {
+    justify-content: space-between;
+}
+
+#bottom-nav-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+#bottom-nav-list a {
+    color: tomato;
+    border-color: tomato;
+    border-style: none groove;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+/* Class and ID styles */
+
+.article-title {
+    font-size: 3rem;
+    color: black;
+}
+
+.page-top-title {
+    font-size: 2rem;
+}
+
+.date-banner {
+    color: lightgray;
+    font-size: 3rem;
+}
+
 #copyright {
     color: lightgray;
+    font-size: 2rem;
+}
+
+/* Specific item styles */
+
+article p::first-letter {
+    color: lightgray;
+    font-size: 5rem;
 }
