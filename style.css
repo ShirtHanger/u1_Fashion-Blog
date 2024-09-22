@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 /* Bulk styles, wrapping other elements */
 
 html {
@@ -39,16 +41,11 @@ ul {
     list-style-type: none;
 }
 
-h6 {
-    text-align: right;
-    font: bolder;
-    color: tomato;
-}
-
 /* Nav list styles */
 
 #top-nav-list {
     color: lightgray;
+    font-family: fantasy;
 }
 
 #top-nav-list h2 {
@@ -84,7 +81,7 @@ h6 {
     color: tomato;
     border-color: tomato;
     border-style: none groove;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none;
 }
 
@@ -93,10 +90,29 @@ h6 {
 .article-title {
     font-size: 3rem;
     color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+article p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+article h6 {
+    text-align: right;
+    font: bold;
+    color: tomato;
+}
+
+article h6 a {
+    color: tomato;
+    text-decoration: none;
 }
 
 .page-top-title {
     font-size: 2rem;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .date-banner {
@@ -114,4 +130,14 @@ h6 {
 article p::first-letter {
     color: lightgray;
     font-size: 5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* I helped Leah Johnson-Carter figure out how to create lines between
+the bottom nav list links, but SHE helped me figure out how to space them
+apart. She added padding to the bottom list's anchor elements
+We collaborated on that particular thing */
+
+#bottom-nav-list ul li a {
+    padding: 0 1.5rem;
 }
